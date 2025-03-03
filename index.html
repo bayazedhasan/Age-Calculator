@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body id="body" class="h-screen">
+    <header class="mx-30" >
+      <nav  class="pt-5">
+        <div class="flex justify-between bg-white shadow-sm rounded-[12px] h-12">
+          <div class="flex items-center pl-4">
+            <div>
+              <img class="w-10 pr-2 " src="assets/logo.png" alt="">
+            </div>
+            <h1 class="font-semibold">Age Calculator</h1>
+          </div>
+            <div id="color-btn">
+              <img class="w-11 pt-3 pr-4 " src="assets/theme-btn.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="input-wrapper">
+          <input type="date" id="date-input" />
+          <button id="calc-age-btn">Calculate</button>
+        </div>
+        <div class="output-wrapper">
+          <div>
+            <span id="years">-</span>
+            <p>Years</p>
+          </div>
+          <div>
+            <span id="months">-</span>
+            <p>Months</p>
+          </div>
+          <div>
+            <span id="days">-</span>
+            <p>Days</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
