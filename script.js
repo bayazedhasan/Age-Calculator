@@ -88,10 +88,13 @@ const displayResult = (bdate, bMonth, bYear) => {
 document.getElementById("calc-age-btn").addEventListener("click", ageCalculate);
 
 const body=document.getElementById('body');
-const button = document.getElementById('color-btn');
 const colors = ['violet', 'red', 'green', 'pink', '#E6E6FA', '#7B68EE','#90EE90', '#8FBC8B', '#E0FFFF', '#f4f7ff']
 body.style.backgroundColor = '#f4f7ff';
-button.addEventListener('click', function(){
-    const colorIndex = parseInt(Math.random()*colors.length);
-    body.style.backgroundColor = colors[colorIndex]; 
-})
+function getRandomColor() {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+document.body.style.backgroundColor = getRandomColor();
+function reloadPage() {
+  location.reload();
+}
